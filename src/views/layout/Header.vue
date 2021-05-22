@@ -1,6 +1,6 @@
 <template>
     <div class="md:p-2 sm:p-2 absolute top-0 w-full z-10">
-        <div class="relative"
+        <div class="relative mobileShow"
              :class="!showMenu ? 'hidden': ''">
             <div class="bg-black opacity-50 w-full h-screen absolute top-0 left-0"></div>
         </div>
