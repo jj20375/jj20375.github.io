@@ -1,7 +1,9 @@
 <template>
-    <div ref="service" id="service">
-        <div class="grid grid-cols-2 bg-cover" style="background-image: url(../../img/service/service-circle-bg.png)">
-            <div class="lg:col-span-1 col-end-3 col-span-2 md:p-2 desktopShow" >
+    <div ref="service"
+         id="service">
+        <div class="grid grid-cols-2 bg-cover"
+             style="background-image: url(../../img/service/service-circle-bg.png)">
+            <div class="lg:col-span-1 col-end-3 col-span-2 md:p-2 desktopShow">
                 <owl-carousel :items="3"
                               :autoplay="true"
                               :loop="true"
@@ -18,8 +20,7 @@
                                  :imgSrc="item.imgSrc" />
                 </owl-carousel>
             </div>
-            <div class="lg:col-end-3 col-start-1 lg:col-span-1 col-span-2 bg-cover md:bg-left-bottom bg-top ml-auto sm:mb-0 -mb-20"
-                 style="background-image: url(../../img/service-red-bg.svg)">
+            <div class="bg lg:col-end-3 col-start-1 lg:col-span-1 col-span-2 bg-cover md:bg-left-bottom bg-top ml-auto sm:mb-0 -mb-20">
                 <div class="flex items-start h-96 md:ml-20 ml-0 md:mt-20 mt-2 md:pl-40 pl-2 md:pr-20">
                     <div class="flex-initial text-white">
                         <h1 class="text-5xl PattayaFont">Service</h1>
@@ -41,7 +42,7 @@
                     </div>
                 </div>
             </div>
-             <div class="lg:col-span-1 col-end-3 col-span-2 p-2 mobileShow">
+            <div class="lg:col-span-1 col-end-3 col-span-2 p-2 mobileShow">
                 <owl-carousel :items="2"
                               :autoplay="true"
                               :loop="true"
@@ -66,9 +67,12 @@
 
 <script>
 import { gsap } from "gsap";
-import { ScrollToPlugin } from 'gsap/ScrollToPlugin'// 导入gsap插件ScrollToPlugin
+import { ScrollToPlugin } from "gsap/ScrollToPlugin"; // 导入gsap插件ScrollToPlugin
 import ServiceCard from "../../components/Card";
-gsap.registerPlugin(ScrollToPlugin)// 注册插件
+gsap.registerPlugin(ScrollToPlugin); // 注册插件
+import service1 from "../../img/service/service-1.jpg";
+import service2 from "../../img/service/service-2.jpg";
+import service3 from "../../img/service/service-3.jpg";
 export default {
     components: {
         ServiceCard
@@ -88,24 +92,24 @@ export default {
                 {
                     name: "莓子",
                     description: "大家好我是莓子，閒閒沒事嗎？趕快來找我陪你聊天逛街，看電影",
-                    imgSrc: "../../img/service/service-1.jpg"
+                    imgSrc: service1
                 },
                 {
                     name: "Sindy",
                     description: "1個人跑步很無趣嗎？趕快約Sindy 跑起來！跑起來，慢跑不再孤零零",
-                    imgSrc: "../../img/service/service-2.jpg"
+                    imgSrc: service2
                 },
                 {
                     name: "Tank(坦克)",
                     description: "哈囉大家好我是Tank，每天運動很難有堅持的動力吧，讓我陪您一起打造精美體態，專業健身知識",
-                    imgSrc: "../../img/service/service-3.jpg"
+                    imgSrc: service3
                 }
-            ],
+            ]
         };
     },
     methods: {
         startAnimate() {
-             let start = gsap.timeline({
+            let start = gsap.timeline({
                 paused: true,
                 scrollTrigger: {
                     trigger: ".box",
@@ -119,14 +123,19 @@ export default {
                     pin: false
                 }
             });
-            start.fromTo(this.$refs.service, { opacity: 0, x:-200 }, { opacity: 1, x: 0, duration: 1, ease: "bounce.inOut", imediateRender: false });
-            start.from(".card", { opacity: 0, rotationY:360, duration:0.5, stagger:0.2, ease: "rough.out", });
+            start.fromTo(this.$refs.service, { opacity: 0, x: -200 }, { opacity: 1, x: 0, duration: 1, ease: "bounce.inOut", imediateRender: false });
+            start.from(".card", { opacity: 0, rotationY: 360, duration: 0.5, stagger: 0.2, ease: "rough.out" });
             start.play();
         }
     },
     mounted() {
         this.startAnimate();
     }
-
 };
 </script>
+
+<style scoped lang="scss">
+.bg {
+    background-image: url(../../img/service-red-bg.svg);
+}
+</style>
