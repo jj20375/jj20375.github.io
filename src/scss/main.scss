@@ -1,0 +1,29 @@
+@import 'tailwindcss/base';
+
+@import 'tailwindcss/components';
+
+@import 'tailwindcss/utilities';
+
+@import "./btn";
+@import "./text-shadow";
+@import "./shadow";
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300&family=Pattaya&display=swap');
+
+
+.mobileShow {
+    @apply sm:sr-only md:sr-only not-sr-only;
+}
+.desktopShow {
+    @apply sm:not-sr-only md:not-sr-only sr-only;
+}
+
+.NotoSansTCFont {
+    font-family: "Noto Sans TC", sans-serif;
+}
+.OpenSansFont {
+    font-family: "Open Sans", sans-serif;
+}
+.PattayaFont {
+    font-family: "Pattaya", sans-serif;
+}
