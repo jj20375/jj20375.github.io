@@ -50,9 +50,9 @@ export default {
 
 <style scoped lang="scss">
 .joinUsBg {
-    background-image: url("/img/joinus-bg.jpg");
+    background-image: url(../../img/joinus-bg.jpg);
     @media screen and(max-width: 650px) {
-        background-image: url("/img/joinus-mobile-bg.jpg");
+        background-image: url(../../img/joinus-mobile-bg.jpg);
     }
 }
 </style>

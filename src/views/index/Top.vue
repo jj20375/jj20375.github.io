@@ -8,7 +8,7 @@
                     <div class="flex flex-wrap mt-5">
                         <div class="flex-1 sm:flex-initial md:flex-initial">
                             <img class="w-full object-fill"
-                                 src="img/logo.svg"
+                                 src="../../img/logo.svg"
                                  alt="">
                         </div>
                         <div class="flex-auto md:flex-initial self-center">
@@ -35,7 +35,7 @@
                 <div id="girl"
                      class="flex-initial">
                     <img class="w-full object-cover"
-                         src="img/index-girl-center.png"
+                         src="../../img/index-girl-center.png"
                          alt="">
                 </div>
                 <div class="flex-initial">
@@ -47,7 +47,7 @@
             </div>
             <img id="girl"
                  class="w-full object-cover desktopShow"
-                 src="img/index-girl-center.png"
+                 src="../../img/index-girl-center.png"
                  alt="">
             <div class="2xl:static xl:static xl:not-sr-only md:sr-only sm:sr-only">
                 <div class="absolute inset-y-0 md:top-1/2 top-72 w-40 h-24 right-1/3">
@@ -67,7 +67,7 @@
             <div class="flex items-end justify-start xl:not-sr-only sr-only">
                 <div class="flex-initial">
                     <img class="w-full object-conver"
-                         src="img/green-arrow.svg"
+                         src="../../img/green-arrow.svg"
                          alt="">
                 </div>
                 <div class="flex-initial">
@@ -80,9 +80,9 @@
 </template>
 <style scoped lang="scss">
 .bg {
-    background-image: url("/img/index-top-bg5.svg");
+    background-image: url(../../img/index-top-bg5.svg);
     @media screen and(max-width: 650px) {
-        background-image: url("/img/index-top-mobile-bg.png");
+        background-image: url(../../img/index-top-mobile-bg.png);
     }
 }
 </style>

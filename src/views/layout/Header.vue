@@ -7,7 +7,7 @@
         <div class="grid grid-cols-3 gap-3 mobileShow bg-blue-500 items-center">
             <div class="col-span-2">
                 <img class="w-full"
-                     src="img/mobile-logo.png"
+                     src="../../img/mobile-logo.png"
                      alt="">
             </div>
             <div @click="clickMoileShowMenu()"

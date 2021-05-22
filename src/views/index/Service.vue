@@ -1,6 +1,6 @@
 <template>
     <div ref="service" id="service">
-        <div class="grid grid-cols-2 bg-cover" style="background-image: url(img/service/service-circle-bg.png)">
+        <div class="grid grid-cols-2 bg-cover" style="background-image: url(../../img/service/service-circle-bg.png)">
             <div class="lg:col-span-1 col-end-3 col-span-2 md:p-2 desktopShow" >
                 <owl-carousel :items="3"
                               :autoplay="true"
@@ -19,7 +19,7 @@
                 </owl-carousel>
             </div>
             <div class="lg:col-end-3 col-start-1 lg:col-span-1 col-span-2 bg-cover md:bg-left-bottom bg-top ml-auto sm:mb-0 -mb-20"
-                 style="background-image: url(img/service-red-bg.svg)">
+                 style="background-image: url(../../img/service-red-bg.svg)">
                 <div class="flex items-start h-96 md:ml-20 ml-0 md:mt-20 mt-2 md:pl-40 pl-2 md:pr-20">
                     <div class="flex-initial text-white">
                         <h1 class="text-5xl PattayaFont">Service</h1>
@@ -88,17 +88,17 @@ export default {
                 {
                     name: "莓子",
                     description: "大家好我是莓子，閒閒沒事嗎？趕快來找我陪你聊天逛街，看電影",
-                    imgSrc: "img/service/service-1.jpg"
+                    imgSrc: "../../img/service/service-1.jpg"
                 },
                 {
                     name: "Sindy",
                     description: "1個人跑步很無趣嗎？趕快約Sindy 跑起來！跑起來，慢跑不再孤零零",
-                    imgSrc: "img/service/service-2.jpg"
+                    imgSrc: "../../img/service/service-2.jpg"
                 },
                 {
                     name: "Tank(坦克)",
                     description: "哈囉大家好我是Tank，每天運動很難有堅持的動力吧，讓我陪您一起打造精美體態，專業健身知識",
-                    imgSrc: "img/service/service-3.jpg"
+                    imgSrc: "../../img/service/service-3.jpg"
                 }
             ],
         };

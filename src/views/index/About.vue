@@ -1,8 +1,8 @@
 <template>
     <div ref="about" id="about" class="grid grid-cols-2 bg-cover bg-no-repeat bg-top"
-         style="background-image: url(img/about-bg.jpg)">
+         style="background-image: url(../../img/about-bg.jpg)">
         <div class="lg:col-span-1 col-span-2 bg-cover bg-top 2xl:bg-top md:bg-right-bottom"
-             style="background-image: url(img/about-blue-bg.svg)">
+             style="background-image: url(../../img/about-blue-bg.svg)">
             <div class="flex items-center h-96 md:ml-20 ml-2 mt-20">
                 <div class="flex-initial">
                     <h1 class="text-5xl text-white PattayaFont title">About</h1>
